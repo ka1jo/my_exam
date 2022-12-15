@@ -344,17 +344,19 @@ h3 {
     opacity: .8;
     z-index: -1;
 }
+.feature-anim{
+    transition: 0.3s;
+}
 .feature-anim:hover{
 color: white !important;
 transform: translateY(-10px);
 }
-.feature-anim{
-    transition: 0.3s;
-}
+
 .feature-box-01:hover{
     color: white !important;
     
 }
+
 .text-center {
     text-align: center !;
 }
@@ -648,7 +650,7 @@ li, ul {
     padding: 50px 0;
         position: relative;
     background: #1c1d24;
-    height: 1700px;
+    min-height: 100vh;
 }
 .gray-bg h3 {
     font-size: 45px;
@@ -1185,7 +1187,7 @@ img{
     background: #131416;
 }
 .backgrnd1{
-    background: #131416;
+    background: transparent;
 }
 
 
@@ -1469,7 +1471,10 @@ img{
 }
 }
                     /* MOBILE-VERSION1-END */
-                    /* MOBILE-VERSION1-END
-                    
+                    /* MOBILE-VERSION1-END */
+
+
+
+                   
 
                     
