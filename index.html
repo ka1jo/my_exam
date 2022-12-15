@@ -24,6 +24,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="http://yoursite.com/themify-icons.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="assets/index.css">
 </head>
 
@@ -213,8 +217,8 @@
         <div class="row">
           <div class="col-md-6 col-lg-4 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200"
             data-aos-dealay="">
-            <div class="feature-box-01">
-              <div class="">
+            <div class="feature-box-01" onmouseover="changes()">
+              <div class="feature-anim">
                 <div class="icon">
                   <i class="fa-solid fa-pen-ruler"></i>
                 </div>
@@ -225,6 +229,14 @@
                 </div>
               </div>
             </div>
+            <!-- our script -->
+            <!-- <script>
+              function changes(){
+                document.getElementsByClassName("feature-box-01")[0].style.color = "white"
+
+              }
+            </script> -->
+            <!-- our script -->
           </div>
           <div class="col-md-6 col-lg-4 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200"
             data-aos-dealay="100">
@@ -511,12 +523,72 @@
     <!-- my Portfolio ends-->
     <!-- carousel start-->
     <!-- carousel start-->
-
-
+    <div class="container-fluid Mystyle2">
+      <div class="container Mystyle1">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide backgrnd1">
+               <div class="avatar">
+                <img src="assets/png/team-1.jpg" alt="">
+               </div>
+               <div class="testimonial-text  body">
+                    <p>  I design and develop services for customers of all sizes,
+                      specializing in creating stylish, modern websites, web services
+                      and online stores.</p>
+                      <div class="testimonial-info">
+                        <h6>Nancy Byers</h6>
+                        <div class="rating-value">
+                          <i class="ti-star"></i>
+                          <span>5.0</span>
+                        </div>
+                      </div>
+               </div>
+            </div>
+            <div class="swiper-slide backgrnd1">
+              <div class="avatar">
+                <img src="assets/png/team-2.jpg" alt="">
+               </div>
+               <div class="testimonial-text  body">
+                    <p>  I design and develop services for customers of all sizes,
+                      specializing in creating stylish, modern websites, web services
+                      and online stores.</p>
+                      <div class="testimonial-info">
+                        <h6>Nancy Byers</h6>
+                        <div class="rating-value">
+                          <i class="ti-star"></i>
+                          <span>5.0</span>
+                        </div>
+                      </div>
+               </div>
+            </div>
+            <div class="swiper-slide backgrnd1">
+              <div class="avatar">
+                <img src="assets/png/team-4.jpg" alt="">
+               </div>
+               <div class="testimonial-text  body">
+                    <p>  I design and develop services for customers of all sizes,
+                      specializing in creating stylish, modern websites, web services
+                      and online stores.</p>
+                      <div class="testimonial-info">
+                        <h6>Nancy Byers</h6>
+                        <div class="rating-value">
+                          <i class="ti-star"></i>
+                          <span>5.0</span>
+                        </div>
+                      </div>
+               </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    
 
     <!-- carousel end-->
     <!-- carousel end-->
-    <section id="section5" class="back2">
+    <section id="section5" class="back2 section">
       <div class="container">
         <div class="row justify-content-center section-title text-center">
           <div class="col-lg-7">
@@ -715,6 +787,20 @@
     <script>
       AOS.init();
     </script>
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper", {
+         slidesPerView: 2,
+         rewind: true,
+         navigation: {
+           nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev"
+         }
+       });
+     </script>
 
   </body>
 
