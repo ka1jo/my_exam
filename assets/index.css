@@ -760,7 +760,7 @@ li, ul {
 .portfolio-img img {
     opacity: .8;
 }
-.wht{
+.h5{
     color: white;
 }
 .portfolio-info span{
@@ -867,6 +867,9 @@ img, svg {
     display: inline-block;
     width: 100%;
     vertical-align: top;
+}
+.blog-img img:hover{
+    transform: scale(1.1);
 }
 .blog-post .blog-info {
     padding: 20px;
@@ -1022,6 +1025,44 @@ img, svg {
 .home-dark .about-section .typo-box h3, .home-dark .about-section .typo-box h5, .home-dark .blog-post .blog-info h6, .home-dark .contct-form .form-group .form-control, .home-dark .contct-form .form-group .form-label, .home-dark .feature-box-01 h5, .home-dark .fixed-header .navbar-brand, .home-dark .fixed-header .navbar-nav>li>a, .home-dark .portfolio-box-01 h5 a, .home-dark .portfolio-filter-01 .filter li.react-tabs__tab, .home-dark .section-title h3, .home-dark .skill-lt h6, .home-dark .sm-title h4, .home-dark .testmonial-box .testmonial-info h6 {
     color: #fff;
 }
+.portfolio-box-01:hover h5{
+    color: #dc965a;
+}
+@keyframes slideTop {
+    10%   { transition: 1s;
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0) }
+  }
+  
+.portfolio-box-01 .gallery-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    cursor: zoom-in!important;
+}
+.portfolio-box-01:hover .portfolio-info {
+    animation: 0.7s ease-in-out 0s 1 normal none running slideTop;
+}
+.portfolio-box-01:hover .portfolio-info {
+    position: relative;
+    z-index: 1;
+}
+.portfolio-box-01 .gallery-link img {
+    transition: all 0.6s ease 0s;
+}
+.portfolio-box-01:hover .gallery-link img {
+    transform: scale(1.1);
+}
+a:hover {
+    color: rgb(213, 129, 56);
+    text-decoration: none;
+}
+.portfolio-box-01:hover .portfolio-info {
+    position: relative;
+    z-index: 1;
+}
 .contct-form .form-group .form-control {
     border-radius: 0;
     border: 1px solid rgba(28,29,36,.5);
@@ -1029,6 +1070,41 @@ img, svg {
     box-shadow: none!important;
     font-size: 15px;
     color: #1c1d24;
+}
+.portfolio-box-01 .gallery-link::after {
+    content: "";
+    position: absolute;
+    inset: auto 0px 0px;
+    height: 0px;
+    width: 100%;
+    transition: all 0.55s ease 0s;
+    background: rgba(220, 150, 90, 0.8);
+    pointer-events: none;
+}
+.portfolio-box-01:hover .gallery-link::after {
+    bottom: auto;
+    top: 0px;
+    height: 100%;
+}
+.portfolio-box-01:hover .portfolio-info{
+    -webkit-animation: slideTop .7s ease-in-out 0s 1 normal none running;
+    animation: slideTop .7s ease-in-out 0s 1 normal none running;
+}
+
+.portfolio-box-01:hover .portfolio-info{
+    position: relative;
+    z-index: 1;
+}
+.portfolio-box-01 .portfolio-info {
+    padding-bottom: 20px;
+}
+.portfolio-info:hover{
+    -webkit-animation: slideTop .7s ease-in-out 0s 1 normal none running;
+    animation: slideTop .7s ease-in-out 0s 1 normal none running;
+}
+.portfolio-info:hover .portfolio-info {
+    -webkit-animation: slideTop .7s ease-in-out 0s 1 normal none running !important;
+    animation: slideTop .7s ease-in-out 0s 1 normal none running !important;
 }
 .form-control {
     display: block;
@@ -1261,6 +1337,9 @@ a {
     color: #fff;
     font-size: 14px;
     margin: 0;
+}
+.nav a:hover{
+    color: #dc965a;
 }
 
 
