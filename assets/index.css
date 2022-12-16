@@ -783,7 +783,7 @@ li, ul {
 .back2{
     padding-top: 10px;
     background: #1c1d24;
-    height: 760px;
+    min-height: 85vh !important;
 }
 .section-title h3 {
     font-size: 45px;
@@ -1435,7 +1435,7 @@ a {
     min-height: 150vh;
 }
 .back2{
-   min-height: 225vh;
+   min-height: 220vh;
 }
 .avatar{
     width: 390px;
@@ -1537,11 +1537,17 @@ a {
     min-height: 200vh;
 }
 .back2{
-    min-height: 210vh;
+    min-height: 215vh;
 }
 .avatar{
     width: 390px;
 }
+}
+
+@media only screen and (min-width: 750px){
+    .back2{
+        min-height: 215vh;
+    }
 }
                     /* MOBILE-VERSION1-END */
                     /* MOBILE-VERSION1-END */
