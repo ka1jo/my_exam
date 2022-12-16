@@ -8,6 +8,7 @@ body {
     padding: 0;
     position: relative;
     background: rgba(19,20,22,255);
+    max-height: 7000px;
 }
 
 .navcl {
@@ -719,6 +720,12 @@ li, ul {
 .portfolio-img img {
     opacity: .8;
 }
+.wht{
+    color: white;
+}
+.portfolio-info span{
+    color: #878e99;
+}
 .sectheight{
     height: 1700px;
 }
@@ -771,7 +778,7 @@ li, ul {
     overflow: hidden;
 }
 .blog-post{
-    padding: 20px;
+    padding: 15px;
     position: relative;
     overflow: hidden;
  
@@ -872,7 +879,7 @@ img, svg {
 
 .sect{
     z-index: 54px;
-    height: 800px;
+    min-height: 40vh;
     width: 100%;
 }
 .after-left-section .container {
@@ -930,12 +937,13 @@ img, svg {
     position: absolute;
     top: 9px;
     margin: 0;
-    left: 2px;
-    font-weight: 400;
-    font-size: 14px;
+    left: 4.2px;
+    font-weight: 500;
+    font-size: 15px;
     padding: 0 10px;
     pointer-events: none;
     transition: all .35s ease;
+    color: white;
 }
 .form-control {
     background: #131416 !important;
@@ -1155,7 +1163,6 @@ img{
 .testmonial-info h6 {
     font-size: 15px;
     font-weight: 600;
-    color: white;
     margin: 0 0 0px;
 }
 .rating-value {
@@ -1177,8 +1184,13 @@ img{
     width: 89%;
 }
 .body h6{
+    color: white;
      margin: 0px !important;
      margin-bottom: 0.9rem
+}
+ .rating-value i {
+    color: #ffc800 !important;
+    margin-right: 3px;
 }
 .Mystyle1{
     height: 500px;
@@ -1188,6 +1200,27 @@ img{
 }
 .backgrnd1{
     background: transparent;
+}
+.footer {
+    padding: 12px 0;
+    background: #1c1d24;
+}
+.footer .nav a {
+    color: #fff;
+    font-size: 14px;
+    margin-right: 17px;
+}
+a {
+    cursor: pointer!important;
+}
+a {
+    color: #dc965a;
+    transition: .3s;
+}
+.footer p {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
 }
 
 
@@ -1359,13 +1392,10 @@ img{
     width: 50%;
 }
 .gray-bg{
-    height: 2050px;
+    min-height: 150vh;
 }
 .back2{
-   height: 2200px;
-}
-.sect{
-    height: 1150px;
+   min-height: 225vh;
 }
 
 } 
@@ -1461,13 +1491,10 @@ img{
     width: 100%;
 }
 .gray-bg{
-     height: 4800px;
+    min-height: 200vh;
 }
 .back2{
-    height: 1900px;
-}
-.sect{
-    height: 1150px;
+    min-height: 210vh;
 }
 }
                     /* MOBILE-VERSION1-END */
