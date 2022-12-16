@@ -190,7 +190,26 @@ a:last-child() {
 .home-dark .dark-img-box {
     background: #232323;
 }
-
+.scroll-bottom {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    z-index: 5;
+}
+.scroll-bottom a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    transition: .3s;
+    cursor: pointer!important;
+}
+.scroll-bottom a:hover {
+    color: #dc965a;
+    letter-spacing: .3rem;
+}
 .aboutus .img-box {
     position: relative;
     overflow: hiddn;
@@ -514,10 +533,30 @@ transform: translateY(-10px);
     opacity: .8;
     z-index: -1;
 }
-.scroll_up span{
+
+.scroll_up span {
+    font-weight: 600;
+}
+.scroll_up:hover {
+    background: #dc965a !important;
+    color: #fff !important;
+    -webkit-transform: translateY(-5px) !important;
+    transform: translateY(-5px) !important; 
+}
+.scroll_up a:hover {
+    
+    color: #fff !important;
+    -webkit-transform: translateY(-5px) !important;
+    transform: translateY(-5px) !important; 
+}
+.scroll_up {
+        list-style-type: none;
+        
+}
+.scroll_up {
     position: fixed;
     right: 20px;
-    bottom: 20px;
+    bottom: 21px;
     background-color: #fff;
     color: #dc965a;
     width: 42px;
@@ -532,11 +571,12 @@ transform: translateY(-10px);
     font-size: 20px;
     cursor: pointer;
 }
-.scroll_up span {
-    font-weight: 600;
+.scroll_up{
+    list-style-type: none;
+    text-decoration: none;
 }
 .sm-title {
-    margin-bottom: 30px;
+    margin-bottom: 30 px;
 }
 .education-box {
     margin: 0;
@@ -1397,6 +1437,9 @@ a {
 .back2{
    min-height: 225vh;
 }
+.avatar{
+    width: 390px;
+}
 
 } 
                     /* MOBILE-VERSION END */
@@ -1495,6 +1538,9 @@ a {
 }
 .back2{
     min-height: 210vh;
+}
+.avatar{
+    width: 390px;
 }
 }
                     /* MOBILE-VERSION1-END */

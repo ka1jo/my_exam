@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="assets/index.css">
 </head>
 
-<body>
+<body data-aos-duration="400" data-aos-delay="0" data-aos-easing="ease">
   <!-- NAV START -->
 
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100" data-aos-easing="ease"
@@ -120,10 +120,12 @@
         <a class="myclass" href=""><i class="fa-brands fa-linkedin-in"></i></a>
         <a class="myclass" href=""><i class="fa-brands fa-pinterest-p"></i></a>
       </div>
-
+          <div class="scroll-bottom go-to">
+            <a href="#section2">SCROLL</a>
+          </div>
     </div>
     <!-- HOME ENDS -->
-    <div id="#section1" class="scroll_up">
+    <div id="#section1" class="scroll_up" href="#section1">
       <a href="#section1"><span class="ti-angle-double-up"></span></a>
     </div>
 
@@ -669,7 +671,7 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
-                      <input class="form-control" type="text" placeholder="Name" name="name">
+                      <input class="form-control" type="text" placeholder="name" name="name">
                       <label class="form-label">Name</label>
                     </div>
                   </div>
