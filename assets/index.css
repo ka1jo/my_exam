@@ -305,7 +305,9 @@ h3 {
     background: #dc965a;
     color: #fff;
 }
-
+.wht{
+    color: white;
+}
 .btn-bar {
     padding-top: 12px;
 }
@@ -378,7 +380,7 @@ transform: translateY(-10px);
 }
 
 .text-center {
-    text-align: center !;
+    text-align: center !important;
 }
 
 .sect3{
@@ -732,6 +734,7 @@ li, ul {
     align-items: center;
     text-align: center;
     justify-content: center;
+    margin-top: 15px;
 }
 .dd-flex ul li{
     margin: 5px;
@@ -742,6 +745,9 @@ li, ul {
 }
 .font-alt{
     font-weight: 800;
+}
+.col-lg-7{
+    width: 
 }
 .portfolio-box-01 {
     background: #131416;
@@ -777,9 +783,7 @@ li, ul {
     animation-fill-mode: forwards;
     display: none;
 }
-.widd{
-    width: 100%;
-}
+
 
 .back2{
     padding-top: 10px;
@@ -1343,6 +1347,9 @@ a {
     color: #dc965a;
 }
 
+.justify-content-center {
+    justify-content: center!important;
+}
 
                     /* MOBILE-VERSION */
                     /* MOBILE-VERSION */
@@ -1520,6 +1527,9 @@ a {
 .avatar{
     width: 390px;
 }
+.dd-flex ul li{
+    font-size: 11px;
+}
 
 } 
                     /* MOBILE-VERSION END */
@@ -1623,6 +1633,7 @@ a {
     width: 390px;
 }
 }
+
 
 @media only screen and (min-width: 750px){
     .back2{
