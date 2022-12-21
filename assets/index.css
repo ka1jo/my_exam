@@ -746,9 +746,7 @@ li, ul {
 .font-alt{
     font-weight: 800;
 }
-.col-lg-7{
-    width: 
-}
+
 .portfolio-box-01 {
     background: #131416;
 }
@@ -763,6 +761,7 @@ li, ul {
 }
 .portfolio-info {
     padding-bottom: 20px;
+    text-align: start !important;
 }
 .portfolio-img img {
     opacity: .8;
@@ -1351,6 +1350,9 @@ a {
     justify-content: center!important;
 }
 
+:root {
+    --swiper-theme-color: #dc965a;
+}
                     /* MOBILE-VERSION */
                     /* MOBILE-VERSION */
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1632,9 +1634,12 @@ a {
 .avatar{
     width: 390px;
 }
+.body p {
+    width: 96%;
+    font-size: 14px;
 }
 
-
+}
 @media only screen and (min-width: 750px){
     .back2{
         min-height: 215vh;
