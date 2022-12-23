@@ -13,6 +13,10 @@ document.querySelector('navv').addEventListener('click',event => {
     });
 });
 
+function anim()
+{
+     let b=document.getElementById("brandd").setAttribute("class", "top1" )
+}
 
 
 

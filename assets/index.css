@@ -13,7 +13,13 @@ body {
 
 .navcl {
     height: 70px;
+    position: fixed;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .2);
+    border-color: #2a2a2a;
     background: #1c1d24;
+}
+.navcl2{
+    height: 70px;
     position: fixed;
     border-bottom: 1px solid hsla(0, 0%, 100%, .2);
     border-color: #2a2a2a;
@@ -1353,6 +1359,10 @@ a {
 :root {
     --swiper-theme-color: #dc965a;
 }
+.hd{
+    display: none;
+}   
+
                     /* MOBILE-VERSION */
                     /* MOBILE-VERSION */
 /* Large devices (laptops/desktops, 992px and up) */

@@ -37,7 +37,7 @@
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100" data-aos-easing="ease"
     data-aos-duration="400" data-aos-delay="0">
 
-    <nav class="navbar navbar-expand-md fixed-top navcl">
+    <nav class="navbar navbar-expand-md fixed-top navcl2" id="nav1">
       <div class="container">
         <div class="logo">
           <span>Krozo</span>
@@ -125,8 +125,8 @@
           </div>
     </div>
     <!-- HOME ENDS -->
-    <div id="#section1" class="scroll_up" href="#section1">
-      <a href="#section1"><span class="ti-angle-double-up"></span></a>
+    <div id="myP" class="scroll_up hd">
+      <a class="hd" id="" href="#section1"><span class="ti-angle-double-up"></span></a>
     </div>
 
     <!-- ABOUT US START-->
@@ -855,6 +855,24 @@
          }
        });
      </script>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  function myFunction() {
+  if (document.documentElement.scrollTop <950) {
+    document.getElementById("myP").className = "";
+  } else {
+    document.getElementById("myP").className = "scroll_up";
+  }
+  if (document.documentElement.scrollTop <90) {
+    document.getElementById("nav1").className = "navcl2 navbar navbar-expand-md fixed-top";
+  } else {
+    document.getElementById("nav1").className = "navcl navbar navbar-expand-md fixed-top";
+  }
+}
+
+</script>
 
   </body>
 
