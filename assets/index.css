@@ -10,6 +10,85 @@ body {
     background: rgba(19,20,22,255);
     max-height: 7000px;
 }
+#menu{
+	width: 35px;
+	height: 30px;
+	margin: 30px 0 20px 20px;
+	cursor: pointer;
+	position: fixed;
+	right: 30px;
+	top: 5px;
+	display: none;
+}
+.bar{
+	height: 2px;
+	width: 77%;
+	background-color: white;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+    margin: 2px;
+}
+ul li a:hover{
+    color: white !important;
+}
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+.fixed-top{
+    z-index: 30 !important;
+}
+.nav li a:hover{
+	font-weight: bold;
+}
+.nav{
+
+	transition: 0.3s ease;
+	display: none;
+}
+.menu-bg, #menu-bar{
+	top: 0;
+	left: 0;
+	position: absolute;
+    z-index: 999999999;
+}
+.menu-bg{
+	z-index: 1;
+	width: 100px;
+	height: 0;
+	background: #1c1d24;
+	transition: 0.3s ease;
+	display: block;
+}
+#menu-bar{
+	z-index: 9999999999999;	
+}
+.change-bg{
+	width: 40vh;
+	height: 100vh;
+	display: block;
+	position: fixed;
+	z-index: 99999;
+}
+.change .bar{
+	background-color: white;
+}
+.change #bar1{
+	transform: translateY(-2px) rotateZ(-48deg);
+}
+.change #bar3{
+	transform: translateY(-10px) rotate(50deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+	display: block;
+}
+
 
 .navcl {
     height: 70px;
@@ -732,7 +811,9 @@ li, ul {
 .active{
     color: #dc965a !important;
 }
-
+li a .active{
+    color: #dc965a !important;
+}
 .dd-flex ul{
     display: flex;
     margin: 5px;
@@ -761,6 +842,7 @@ li, ul {
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
     margin: 15px 0;
     position: relative;
+   
 }
 .portfolio-img {
     position: relative;
@@ -787,8 +869,11 @@ li, ul {
     animation-duration: 2s;
     animation-fill-mode: forwards;
     display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    float: left;
 }
-
 
 .back2{
     padding-top: 10px;
@@ -1361,8 +1446,22 @@ a {
 }
 .hd{
     display: none;
-}   
+}
+.menu-bg{
+	display: none ;
+}
+.change-bg{
+	display: none;
+}
 
+.offcanvas-title{
+	padding: 5px 25px;
+    color: white;
+}
+#demo{display: none;}
+.h1, h1 {
+    font-size: 30px;
+}
                     /* MOBILE-VERSION */
                     /* MOBILE-VERSION */
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1491,7 +1590,7 @@ a {
         text-decoration: none;
     }
     .nabar-nav {
-        padding: 50px 10px;
+        padding: 10px 10px;
         display: block;
         height: 100%;
         align-items: center;
@@ -1514,7 +1613,7 @@ a {
     margin: 0;
     color: #fff;
     border: none;
-    width: 100%;
+    width: 30vh;
     background: #dc965a;
     font-size: 18px;
     z-index: 5;
@@ -1542,7 +1641,29 @@ a {
 .dd-flex ul li{
     font-size: 11px;
 }
-
+#menu{
+	display: block;
+}
+.menu-bg{
+	z-index: 14;
+	width: 100px;
+	height: 0;
+	background: #1c1d24;
+	transition: 0.3s ease;
+	display: block;
+    position: fixed;
+}
+.change-bg {
+    width: 30vh;
+    height: 200vh;
+    display: block;
+    z-index: 99;
+    position: fixed;
+}
+#demo{
+	display: block;
+    position: fixed;
+}
 } 
                     /* MOBILE-VERSION END */
                     /* MOBILE-VERSION END */
@@ -1596,6 +1717,7 @@ a {
         height: 100%;
         align-items: center;
         margin: 0;
+        position: fixed;
     }
     .offcanvas h1{
         padding: -10px 25px;
@@ -1615,7 +1737,7 @@ a {
     margin: 0;
     color: #fff;
     border: none;
-    width: 100%;
+    width: 30vh;
     background: #dc965a;
     font-size: 18px;
     z-index: 5;
@@ -1648,18 +1770,41 @@ a {
     width: 96%;
     font-size: 14px;
 }
-
+#menu{
+	display: block;
+}
+.menu-bg{
+	z-index: 14;
+	width: 100px;
+	height: 0;
+	background: #1c1d24;
+	transition: 0.3s ease;
+	display: block;
+    position: fixed;
+}
+.change-bg {
+    width: 30vh;
+    height: 200vh;
+    display: block;
+    z-index: 99;
+    position: fixed;
+}
+#demo{
+	display: block;
+    position: fixed;
+}
 }
 @media only screen and (min-width: 750px){
     .back2{
         min-height: 215vh;
     }
+
 }
                     /* MOBILE-VERSION1-END */
                     /* MOBILE-VERSION1-END */
 
 
+      
+  /* BURGER AND ANİM START */
+  /* BURGER AND ANİM START */
 
-                   
-
-                    

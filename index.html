@@ -63,17 +63,7 @@
           </li>
         </ul>
 
-        <button class="navtg" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-          <div class="hamburger">
-            <div style="min-height: px;">
-              <div class="mobile-menu collapse collapse-horizontal" id="collapseWidthExample ">
-              </div>
-            </div>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </button>
+       
 
       </div>
     </nav>
@@ -493,7 +483,7 @@
                   </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 box all Photography Fashion" data-aos="fade-right"
-                  data-aos-duration="1600" data-aos-delay="0">
+                  data-aos-duration="1200" data-aos-delay="0">
                   <div class="portfolio-box-01">
                     <div class="portfolio-img">
                       <div class="portfolio-info">
@@ -812,20 +802,29 @@
 
 
     <!-- mobile-menu start-->
-    <div class="offcanvas offcanvas-start" id="demo">
-      <div class="" id="demo">
-        <button type="button" class="btn-close btn-pos" data-bs-dismiss="offcanvas" id="demo"></button>
-        <h1 class="offcanvas-title">Krozo</h1>
-        <ul class="anchor_nv nabar-nav m-auto">
-          <li><a href="#section1">HOME</a></li>
-          <li><a href="#section2">ABOUT US</a></li>
-          <li><a href="#section3">SERVİCES</a></li>
-          <li><a href="#section4">PORTFOLIO</a></li>
-          <li><a href="#section5">BLOG</a></li>
-          <li><a href="#section6">CONTACT</a></li>
+    <div class="div">
+      <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+          <div class="" id="demo">
+            <h1 class="offcanvas-title">Krozo</h1>
+            <ul class="anchor_nv nabar-nav m-auto">
+              <li><a href="#section1">HOME</a></li>
+              <li><a href="#section2">ABOUT US</a></li>
+              <li><a href="#section3">SERVİCES</a></li>
+              <li><a href="#section4">PORTFOLIO</a></li>
+              <li><a href="#section5">BLOG</a></li>
+              <li><a href="#section6">CONTACT</a></li>
+            </ul>
+            <button onclick="onClickMenu()" type="button" class="btn-style" data-bs-dismiss="menu-bar" id="demo">Close Sidebar</button>
+            </div>
         </ul>
-        <button type="button" class="btn-style" data-bs-dismiss="offcanvas" id="demo">Close Sidebar</button>
       </div>
+      <div class="menu-bg" id="menu-bg"></div>
     </div>
 
     <div class="container-fluid mt-3">
@@ -872,6 +871,10 @@
   }
 }
 
+</script>
+
+<script>
+  $aos-distance: 50px;
 </script>
 
   </body>
