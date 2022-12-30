@@ -1,10 +1,12 @@
-const filterBox = document.querySelectorAll('.box');
+
+
+const filterBox = document.querySelectorAll('.box1');
 
 document.querySelector('navv').addEventListener('click',event => { 
     if (event.target.tagName !== 'LI' ) return false;
-
-    let filterClass = event.target.dataset['f'];
-    console.log(filterClass);
+    AOS.init();
+    AOS.refresh();
+    let filterClass = event.target.dataset['f1'];
     filterBox.forEach (elem => {
         elem.classList.remove('hide');
          if (!elem.classList.contains(filterClass)){
@@ -23,7 +25,7 @@ function anim()
 
 const menuBtn = document.querySelector(".menu-btn");
 let menuOpen = false;
-menuBtn.addEventListener("click", () => {
+("click", () => {
  if(!menuOpen){
     menuBtn.classList.add("open");
     menuOpen = true ;
