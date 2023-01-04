@@ -1491,7 +1491,7 @@ a {
     margin: 50px 0px 20px 0px;
 }
 .control{
-    transition: 0.2s ease-in-out ;
+    transition: all .55s ease;
     
 }
 .mixitup-control-active{

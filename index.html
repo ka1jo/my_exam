@@ -22,11 +22,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/index.css">
 </head>
 
-<body data-aos-duration="400" data-aos-delay="0" data-aos-easing="ease" onload="AOS.refresh();">
+<body data-aos-duration="400" data-aos-delay="0" data-aos-easing="ease" onload="refresh();">
   <!-- NAV START -->
 
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100" data-aos-easing="ease"
@@ -84,7 +85,7 @@
         </svg>
       </div>
       <div>
-        <div class="text-center txt " data-aos="fade-up" data-aos-duration="2500">
+        <div class="text-center txt " data-aos="fade-up" data-aos-duration="500">
           <h6>Hi There, I'm</h6>
           <h2>Miladra Narzo</h2>
           <button class="btn mystylebutton" data-aos="fade-up" data-aos-duration="500"><span>web
@@ -96,11 +97,11 @@
         </div>
       </div>
       <div class="nav3 social-icons justify-content-center text-sm-center justify-content-md-end mycl">
-        <a class="myclass1 myclass" href=""><i class="fa-brands fa-facebook-f"></i></i></a>
-        <a class="myclass myclass2" href=""><i class="fa-brands fa-twitter"></i></a>
-        <a class="myclass" href=""><i class="fa-brands fa-instagram"></i></a>
-        <a class="myclass" href=""><i class="fa-brands fa-linkedin-in"></i></a>
-        <a class="myclass" href=""><i class="fa-brands fa-pinterest-p"></i></a>
+        <a class="myclass1 myclass" href="https://www.facebook.com/iatc.edu.az/" target="_blank"><i class="fa-brands fa-facebook-f"></i></i></a>
+        <a class="myclass myclass2" href="https://twitter.com/IsraelinAZ" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a class="myclass" href="https://www.instagram.com/iatc.edu.az/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a class="myclass" href="https://az.linkedin.com/company/iatc-edu" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="myclass" href="https://www.pinterest.com/pin/65583738313633812/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
       </div>
       <div class="scroll-bottom go-to">
         <a href="#section2">SCROLL</a>
@@ -116,11 +117,12 @@
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-6">
-            <div class="img-box dark-img-box " data-aos="fade-right" data-aos-duration="2000">
+            <div class="img-box dark-img-box wow animate__fadeInLeft ">
               <img src="assets/png/about-2.jpg" alt="">
             </div>
           </div>
-          <div class="col-lg-6 align-items-center" data-aos="fade-right" data-aos-duration="2500">
+          <div class="col-lg-6 align-items-center wow animate__fadeInLeft " data-wow-delay="0.1s"
+          >
             <div class="typo-box about-me align-items-center height top">
               <h3>Miladra Narzo</h3>
               <h5>
@@ -171,7 +173,7 @@
                 </div>
               </div>
               <div class="btn-bar">
-                <button class="button-48" role="button"><span class="text">Download CV</span></button>
+                <a target="_blank" href="assets/png/SweetCV-CV (1).pdf" download><button class="button-48" role="button"><span class="text">Download CV</span></button></a>
               </div>
             </div>
           </div>
@@ -199,8 +201,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 col-lg-4 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200"
-            data-aos-dealay="">
+          <div class="col-md-6 col-lg-4 my-3 wow animate__slideInLeft">
             <div class="feature-box-01">
               <div class="feature-anim">
                 <div class="icon">
@@ -215,8 +216,7 @@
             </div>
 
           </div>
-          <div class="col-md-6 col-lg-4 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200"
-            data-aos-dealay="100">
+          <div class="col-md-6 col-lg-4 my-3 animate__slideInLeft wow">
             <div class="feature-box-01">
               <div class="feature-anim">
                 <div class="icon">
@@ -230,8 +230,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200"
-            data-aos-dealay="200">
+          <div class="col-md-6 col-lg-4 my-3 animate__slideInLeft wow">
             <div class="feature-box-01">
               <div class="feature-anim">
                 <div class="icon">
@@ -245,8 +244,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200"
-            data-aos-dealay="300">
+          <div class="col-md-6 col-lg-4 my-3 animate__slideInLeft wow" data-wow-delay="0.1s">
             <div class="feature-box-01">
               <div class="feature-anim">
                 <div class="icon">
@@ -260,8 +258,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200"
-            data-aos-dealay="400">
+          <div class="col-md-6 col-lg-4 my-3 animate__slideInLeft wow" data-wow-delay="0.1s">
             <div class="feature-box-01">
               <div class="feature-anim">
                 <div class="icon">
@@ -275,8 +272,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200"
-            data-aos-dealay="500">
+          <div class="col-md-6 col-lg-4 my-3 animate__slideInLeft wow" data-wow-delay="0.1s">
             <div class="feature-box-01">
               <div class="feature-anim">
                 <div class="icon">
@@ -299,7 +295,7 @@
     <section class="section slill-section backgrnd">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
+          <div class="col-lg-4 my-3 animate__slideInLeft wow">
             <div class="sm-title">
               <h4 class="font-alt">Education</h4>
             </div>
@@ -321,7 +317,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-4 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
+          <div class="col-lg-4 my-3 animate__slideInLeft wow" data-wow-delay="0.1s">
             <div class="sm-title">
               <h4 class="font-alt">Experience</h4>
             </div>
@@ -344,7 +340,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-4 my-3 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1200">
+          <div class="col-lg-4 my-3 animate__slideInLeft wow" data-wow-delay="0.2s">
             <div class="sm-title">
               <h4 class="font-alt">My Skills</h4>
             </div>
@@ -428,19 +424,19 @@
 
           </navv>
           <div class="controls portcontrld">
-            <button type="button" class="control" data-filter="all"  onclick="AOS.refresh();"  >All</button>
-            <button type="button" class="control"  data-filter=".branding"onclick="AOS.refresh();"  >Branding</button>
-            <button type="button" class="control" data-filter=".Photography" onclick="AOS.refresh();" >Photography</button>
-            <button type="button" class="control" data-filter=".Fashion" onclick="AOS.refresh();" >Fashion</button>
-            <button type="button" class="control" data-filter=".product" onclick="AOS.refresh();" >Product</button>
+            <button type="button" class="control" data-filter="all" onclick="refresh()">All</button>
+            <button type="button" class="control" data-filter=".branding" onclick="refresh()">Branding</button>
+            <button type="button" class="control" data-filter=".Photography" onclick="refresh()">Photography</button>
+            <button type="button" class="control" data-filter=".Fashion" onclick="refresh()">Fashion</button>
+            <button type="button" class="control" data-filter=".product" onclick="refresh()">Product</button>
 
-        </div>
-          
+          </div>
+
         </div>
 
 
         </nav>
-        <div class="boxes">
+        <div class="boxes" onload="refresh()">
           <div class="react-tabs__tab-panel react-tabs__tab-panel-selected">
             <div class="portfolio-content row lightbox-gallery portbox">
               <div class="col-sm-6 col-lg-4 box1 all branding mix">
@@ -536,7 +532,7 @@
 
     <div class="container-fluid Mystyle2">
       <div class="container Mystyle1">
-        <div class="swiper mySwiper " data-aos="fade-up" data-aos-duration="1200">
+        <div class="swiper mySwiper wow animate__fadeInLeft" >
           <div class="swiper-pagination myclass4"></div>
           <div class="swiper-wrapper">
             <div class="swiper-slide backgrnd1">
@@ -612,7 +608,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-md-6 my-3 aos-init aos-animate padd" data-aos="fade-right" data-aos-duration="1200">
+          <div class="col-lg-4 col-md-6 my-3 wow animate__fadeInLeft padd" >
             <div class="blog-post">
               <div class="blog-img">
                 <div class="data">
@@ -629,7 +625,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 my-3 aos-init aos-animate padd" data-aos="fade-right" data-aos-duration="1200">
+          <div class="col-lg-4 col-md-6 my-3 animate__fadeInLeft wow padd">
             <div class="blog-post">
               <div class="blog-img">
                 <div class="data">
@@ -645,7 +641,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 my-3 aos-init aos-animate padd" data-aos="fade-right" data-aos-duration="1200">
+          <div class="col-lg-4 col-md-6 my-3 padd wow animate__fadeInLeft">
             <div class="blog-post">
               <div class="blog-img">
                 <div class="data">
@@ -682,13 +678,13 @@
               <form>
                 <div class="row">
                   <div class="col-md-6">
-                    <div class="form-group aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="form-group wow animate__fadeInUp" >
                       <input class="form-control" type="text" placeholder="Name" name="name">
                       <label class="form-label">Name</label>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="form-group aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200"
+                    <div class="form-group wow animate__fadeInUp"
                       data-aos-delay="50">
                       <input type="email" class="form-control" placeholder="Email" name="email">
                       <label class="form-label">Email</label>
@@ -696,21 +692,19 @@
                   </div>
 
                   <div class="col-12">
-                    <div class="form-group aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200"
+                    <div class="form-group wow animate__fadeInUp"
                       data-aos-delay="100">
                       <input type="text" class="form-control" name="subject" placeholder="Subject">
                       <label class="form-label">Subject</label>
                     </div>
                   </div>
                   <div class="col-12">
-                    <div class="form-group aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200"
-                      data-aos-delay="150">
+                    <div class="form-group wow animate__fadeInUp" >
                       <textarea name="comment" rows="4" class="form-control" placeholder="Comment"></textarea>
                       <label class="form-label">Comment</label>
                     </div>
                   </div>
-                  <div class="form-group aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200"
-                    data-aos-delay="200">
+                  <div class="form-group wow animate__fadeInUp" >
                     <div class="btn-bar">
                       <button class="px-btn px-btn-theme">Send your message</button>
                     </div>
@@ -721,14 +715,13 @@
           </div>
           <div class="col-lg-4 ml-auto my3 mgg">
             <div class="contact-info">
-              <div class="sm-title aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
+              <div class="sm-title animate__fadeInUp wow" >
                 <h4 class="font-alt">Get in Touch</h4>
                 <p>Always available for freelancing if the right project comes along, Feel free to contact me.
 
                 </p>
               </div>
-              <div class="sm-title1 aos-init aos-animate media" data-aos="fade-up" data-aos-duration="1200"
-                data-aos-delay="50">
+              <div class="sm-title1 wow animate__fadeInUp media">
                 <div class="icon1">
                   <i class="ti-map"></i>
                 </div>
@@ -742,8 +735,7 @@
                   </span>
                 </div>
               </div>
-              <div class="sm-title1 aos-init aos-animate media" data-aos="fade-up" data-aos-duration="1200"
-                data-aos-delay="100">
+              <div class="sm-title1 wow animate__fadeInUp media" >
                 <div class="icon1">
                   <i class="ti-email"></i>
                 </div>
@@ -755,8 +747,7 @@
                   </span>
                 </div>
               </div>
-              <div class="sm-title aos-init aos-animate media1" data-aos="fade-up" data-aos-duration="1200"
-                data-aos-delay="150">
+              <div class="sm-title wow animate__fadeInUp media1">
                 <div class="icon1">
                   <i class="ti-mobile"></i>
                 </div>
@@ -784,11 +775,15 @@
         <div class="row align-items-center">
           <div class="col-md-6 my-2">
             <div class="nav2 justify-content-center text-md-left justify-content-md-start">
-              <a target="_blank" href="https://www.facebook.com/iatc.edu.az/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a target="_blank" href="https://www.facebook.com/iatc.edu.az/"><i
+                  class="fa-brands fa-facebook-f"></i></a>
               <a target="_blank" href="https://twitter.com/IsraelinAZ"><i class="fa-brands fa-twitter"></i></a>
-              <a target="_blank" href="https://www.instagram.com/iatc.edu.az/"><i class="fa-brands fa-instagram"></i></a>
-              <a target="_blank" href="https://az.linkedin.com/company/iatc-edu"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a target="_blank" href="https://www.pinterest.com/pin/65583738313633812/"><i class="fa-brands fa-pinterest-p"></i></a>
+              <a target="_blank" href="https://www.instagram.com/iatc.edu.az/"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a target="_blank" href="https://az.linkedin.com/company/iatc-edu"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+              <a target="_blank" href="https://www.pinterest.com/pin/65583738313633812/"><i
+                  class="fa-brands fa-pinterest-p"></i></a>
             </div>
           </div>
           <div class="col-md-6 my-2 text-center text-md-right">
@@ -881,6 +876,8 @@
 
     </script>
 
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
       integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -888,9 +885,30 @@
       var containerEl = document.querySelector('.portbox');
 
       var mixer = mixitup(containerEl);
-     
-    
+
+
     </script>
+
+
+   <script src="WOW-master/dist/wow.min.js">
+
+   </script>
+<script>
+  new WOW({
+    boxClass: "wow", // animated element css class (default is wow)
+    animateClass: "animate__animated", // animation css class (default is animated)
+    offset: 0, // distance to the element when triggering the animation (default is 0)
+    mobile: true, // trigger animations on mobile devices (default is true)
+    live: true, // act on asynchronously loaded content (default is true)
+    callback: function (box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null, // optional scroll container selector, otherwise use window,
+    resetAnimation: true, // reset animation on end (default is true)
+  }).init();
+</script>
+
   </body>
 
 </html>

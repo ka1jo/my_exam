@@ -1,11 +1,14 @@
 
+function refresh(){
+   AOS.refreshHard();
+}
 
 const filterBox = document.querySelectorAll('.box1');
 
 document.querySelector('navv').addEventListener('click',event => { 
+   AOS.init();
+    AOS.refreshHard();
     if (event.target.tagName !== 'LI' ) return false;
-    AOS.init();
-    AOS.refresh();
     let filterClass = event.target.dataset['f1'];
     filterBox.forEach (elem => {
         elem.classList.remove('hide');
@@ -40,4 +43,9 @@ function onClickMenu(){
 	document.getElementById("menu").classList.toggle("change");
 	document.getElementById("nav").classList.toggle("change");
 	document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+
+
+function refresh(){
+   AOS.refreshHard();
 }
