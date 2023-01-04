@@ -1498,6 +1498,21 @@ a {
     border-bottom: 2px solid #dc965a !important;
     
 }
+.dark-shape{
+    animation-name: anim1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+  @keyframes anim1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(40deg);
+    }
+  }
 
                     /* MOBILE-VERSION */
                     /* MOBILE-VERSION */
