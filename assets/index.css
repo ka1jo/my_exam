@@ -1504,7 +1504,6 @@ a {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-
   @keyframes anim1 {
     from {
       transform: rotate(0deg);
@@ -1513,7 +1512,6 @@ a {
         transform: rotate(40deg);
     }
   }
-
                     /* MOBILE-VERSION */
                     /* MOBILE-VERSION */
 /* Large devices (laptops/desktops, 992px and up) */
